@@ -68,7 +68,7 @@ $sm: 480px;
 }
 
 #header-container #navi a:hover {
-  color: #89c997;
+  color: #000;
 }
 
 #header-container .navi-in > ul .sub-menu {
@@ -165,6 +165,29 @@ $sm: 480px;
   margin: 0;
 }
 
+// 新規投稿の投稿日表示
+.new-entry-card-date {
+  display: block;
+}
+
+// 新規投稿の更新日表示
+.new-entry-card-update-date {
+  display: none;
+}
+
+// -------------------------
+// ----- トップページシェアボタン -----
+// -------------------------
+.home .sns-follow-buttons {
+  justify-content: space-around;
+}
+
+.home .sns-share-buttons a,
+.home .sns-follow-buttons a {
+  width: 20% !important;
+  border-radius: 50px;
+}
+
 // -------------------------
 // ----- トップページサイドバー -----
 // -------------------------
@@ -174,10 +197,11 @@ $sm: 480px;
   margin: 18px auto;
 }
 
-// SNSボタン
-.sidebar .sns-follow-buttons a {
-  width: 25%; /*ボタンの幅*/
+.author-follows {
+  display: none;
 }
+
+// SNSボタン
 .sidebar .sns-follow {
   margin: 0 0 24px 0;
 }
@@ -187,35 +211,16 @@ $sm: 480px;
 }
 
 .sidebar .sns-follow-buttons a {
-  background: none !important;
-  border: 1px solid #444d53;
-  color: #444d53;
+  width: 18%; /*ボタンの幅*/
   border-radius: 50px;
 }
-.sidebar .twitter-button:hover {
-  background-color: #1da1f2 !important;
-  color: #fff;
-  border-color: #1da1f2;
+
+.sidebar .sns-follow {
+  margin: 0 0 24px 0;
 }
-.sidebar .feedly-button:hover {
-  background-color: #2bb24c !important;
-  color: #fff;
-  border-color: #2bb24c;
-}
-.sidebar .rss-button:hover {
-  background-color: #f26522 !important;
-  color: #fff;
-  border-color: #f26522;
-}
-.sidebar .facebook-button:hover {
-  background-color: #3b5998 !important;
-  color: #fff;
-  border-color: #3b5998;
-}
-.sidebar .instagram-button:hover {
+
+.sidebar .instagram-button {
   background-color: #c522b8 !important;
-  color: #fff;
-  border-color: #c522b8;
 }
 
 // -------------------------
@@ -224,4 +229,13 @@ $sm: 480px;
 .entry-card-thumb img {
   height: 230px;
   object-fit: cover !important;
+}
+
+// -------------------------
+// ----- フッター -----
+// -------------------------
+.footer-bottom-content {
+  position: relative;
+  top: -20px;
+  left: 0;
 }

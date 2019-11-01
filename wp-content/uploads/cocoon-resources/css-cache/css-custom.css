@@ -89,6 +89,12 @@ table tr:nth-of-type(2n+1),
 #footer a{
   color: #fff;
 }
+.header .header-in{
+  min-height: 350px;
+}
+.header{
+  background-image: url(http://localhost/wordpress_blog/wp-content/uploads/2019/11/teddy-bear-2855982_1920.jpg);
+}
 #header-container .navi,
 #navi .navi-in > .menu-header .sub-menu{
   background-color: #89c997;
@@ -119,6 +125,11 @@ table tr:nth-of-type(2n+1),
 .logo-header img{
   width: 300px;
   height: auto;
+}
+@media screen and (max-width: 834px){
+  .header div.header-in{
+    min-height: 350px;
+  }
 }
 /* .toc-content, */
 .toc-checkbox {
